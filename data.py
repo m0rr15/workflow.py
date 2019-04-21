@@ -151,6 +151,14 @@ df['y_d'] = df.y>0  # y is timestamp
 df.y_d = df.y_d * 1
 df['x_n'] = df.x.fillna(0)  # x is count variable, nans = 0
 
+# from dummy to count variables
+aggregations = {
+    "x1_d": "sum",
+    "x2_d": "sum",
+    }
+df = df.groupby(['id_user']).agg(aggregations)
+df.reset_index(inplace=True)
+
 # Vectorized operations 1: .apply (apply fun to col-values)
 # Write a function: to_celsius
 def to_celsius(F):
