@@ -51,6 +51,7 @@ df.shape
 df.columns
 df.describe()
 df.info()
+df.dtypes.value_counts()
 
 # Subset ROWS
 df.head()
