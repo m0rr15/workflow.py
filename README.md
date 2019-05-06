@@ -1,5 +1,5 @@
 # workflow.py
-contains my tools.
+my toolbox:
 
 * data.py is for the fun stuff: data import, inspection, var. treatment, df tidying, df merging, df export,
 * visualizations.py for EDA and general visualizations,
