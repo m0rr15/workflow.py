@@ -66,7 +66,6 @@ plt.show()
 # pdf and cdf on two different plots
 fig, axes = plt.subplots(nrows=2, ncols=1)  # !!!
 _ = df["x_cont"].plot(ax=axes[0], kind="hist", bins=30, density=True, range=(0,10))  # Plot the PDF
-_ = plt.show()
 _ = df["x_cont"].plot(ax=axes[1], kind="hist", bins=30, density=True, cumulative=True, range=(0,10))  # Plot the CDF
 plt.show()
 
